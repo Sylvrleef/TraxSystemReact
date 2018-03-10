@@ -10,7 +10,6 @@ import RequestAccess from './components/RequestAccess';
 const App = () => {
         return ( 
             <div>
-                <NavBar />
                 <h1>LOGIN</h1>
                 <hr></hr>
                 Welcome message goes here!
