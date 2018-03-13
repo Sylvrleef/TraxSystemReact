@@ -29,3 +29,18 @@ View, add, edit and manage:
  - purchase requests
  - user authentication
  - vendors and suppliers
+
+# LINKS:
+ADD GITHUB.COM ONE
+ADD HEROKU LINK
+ADD ISSUE TRACKER 
+
+# AUTHORS:
+Jennifer Usrey-Scott: concept creation, project management and user authentication
+Jason Saenz: front-end development, React.js
+Anita Rodgerson: back-end development, database and routes
+Batli Joselevitz: user experience and styling, wireframes and css
+
+# ACKNOWLEDGMENTS:
+
+Thank you to our UT September cohort instructional team: Will, Jennifer and Paul
