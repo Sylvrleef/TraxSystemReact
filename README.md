@@ -1,6 +1,5 @@
-# Project3-Team1
 
-# PROJECT: TRAX SYSTEM
+# PROJECT 3 - Team 1: TRAX SYSTEM
 
 # TABLE OF CONTENTS:
 - Description
