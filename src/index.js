@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import { AddBtn } from "./components/AddBtn";
-import { InputUnit } from "./components/InputUnit";
-import { InputCost } from "./components/InputCost";
-import { CancelBtn } from "./components/CancelBtn";
-import { InputFld } from "./components/InputFld";
-import { InputTxt } from "./components/InputTxt";
+import { AddBtn } from "./CreateRequest/components/AddBtn";
+import { InputUnit } from "./CreateRequest/components/InputUnit";
+import { InputCost } from "./CreateRequest/components/InputCost";
+import { CancelBtn } from "./CreateRequest/components/CancelBtn";
+import { InputFld } from "./CreateRequest/components/InputFld";
+import { InputTxt } from "./CreateRequest/components/InputTxt";
 
 class CreateRequest extends Component {
     state = {
@@ -38,4 +38,4 @@ class CreateRequest extends Component {
     }
 }
 
-ReactDOM.render(<CreateRequest />, document.querySelector(".container"));
+ReactDOM.render(<CreateRequest />, document.querySelector("#root"));
