@@ -11,7 +11,7 @@ export const StateDrop = props => (
       // value={props.value}
       required="true">
       <option value="" defaultValue>
-        Select a Unit
+        Select a State
       </option>
 	<option value="AL">AL</option>
 	<option value="AK">AK</option>
