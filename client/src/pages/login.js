@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 
 import { UsernameInput } from "../components/UsernameInput";
 import { PasswordInput } from "../components/PasswordInput";
