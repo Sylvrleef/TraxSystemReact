@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-import { UsernameInput } from "../components/LoginPage/UsernameInput";
-import { PasswordInput } from "../components/LoginPage/PasswordInput";
-import ResetPassword from "../components/LoginPage/ResetPassword";
-import RequestAccess from "../components/LoginPage/RequestAccess";
+import { UsernameInput } from "../components/UsernameInput";
+import { PasswordInput } from "../components/PasswordInput";
+import ResetPassword from "../components/ResetPassword";
+import RequestAccess from "../components/RequestAccess";
 import HelloMsg from "../components/HelloMsg";
 
 class Login extends Component {
@@ -29,12 +29,14 @@ class Login extends Component {
         <hr />
         <form>
           <HelloMsg />
+          <label htmlFor="Username">Username</label>
           <UsernameInput
             type="text"
             name="userName"
             onChange={this.handleInputChange}
             value={this.state.userName}
           />
+          <label htmlFor="password">Password</label>
           <PasswordInput
             name="password"
             onChange={this.handleInputChange}
