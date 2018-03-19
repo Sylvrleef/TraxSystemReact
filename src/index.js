@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import { AddBtn } from "./components/AddBtn";
+import { AddBtn } from "./components/CreateRequest/AddBtn";
 //import { DeleteBtn } from "./components/DeleteBtn";
-import { InputFld } from "./components/InputFld";
-import { InputTxt } from "./components/InputTxt";
-import Table from "./components/Table";
-import { InputUnit } from "./components/InputUnit";
-import Modal from "./components/Modal";
+import { InputFld } from "./components/CreateRequest/InputFld";
+import { InputTxt } from "./components/CreateRequest/InputTxt";
+import Table from "./components/CreateRequest/Table";
+import { InputUnit } from "./components/CreateRequest/InputUnit";
+import Modal from "./components/CreateRequest/Modal";
 
 class CreateRequest extends Component {
   constructor(props) {
