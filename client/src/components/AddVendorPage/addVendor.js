@@ -24,4 +24,4 @@ const App = () => {
             );
         };
 
-ReactDOM.render( < App / > , document.querySelector(".container"));
+ReactDOM.render( < App /> , document.querySelector(".container"));
