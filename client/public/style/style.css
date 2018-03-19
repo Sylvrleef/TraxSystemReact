@@ -94,7 +94,7 @@ footer{
     margin: 10px;
 }
 
-.root {
+.container {
     margin: 0px;
     padding: 0px;
 }
@@ -103,10 +103,6 @@ footer{
     .container {
         max-width: 100%;
     }
-
-}
-
-a#copy {
 
 }
 
