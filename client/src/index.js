@@ -162,4 +162,4 @@ class CreateRequest extends Component {
   }
 }
 
-ReactDOM.render(<App />, document.querySelector(".container"));
+ReactDOM.render(<CreateRequest />, document.querySelector(".container"));
