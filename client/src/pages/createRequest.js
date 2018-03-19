@@ -1,6 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import { AddBtn } from "../components/CreateRequest/AddBtn";
+//import { DeleteBtn } from "./components/DeleteBtn";
+import { InputFld } from "../components/CreateRequest/InputFld";
+import { InputTxt } from "../components/CreateRequest/InputTxt";
+import Table from "../components/CreateRequest/Table";
+import { InputUnit } from "../components/CreateRequest/InputUnit";
+import Modal from "../components/CreateRequest/Modal";
 
 class CreateRequest extends Component {
   constructor(props) {
@@ -156,4 +162,4 @@ class CreateRequest extends Component {
   }
 }
 
-ReactDOM.render(<CreateRequest />, document.querySelector("#root"));
+export default CreateRequest;
