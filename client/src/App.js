@@ -6,6 +6,7 @@ import CreateRequest from "./pages/createRequest";
 import Fiscal from "./pages/fiscal";
 import Initiator from "./pages/initiator";
 import Login from "./pages/login";
+import AddVendorRequest from "./pages/addVendorRequest"
 import "./App.css";
 
 const App = () => (
@@ -18,6 +19,7 @@ const App = () => (
         <Route exact path="/business" component={Business} />
         <Route exact path="/fiscal" component={Fiscal} />
         <Route exact path="/initiator" component={Initiator} />
+        <Route exact path="/vendorrequest" component={AddVendorRequest} />
       </Switch>
     </div>
   </Router>
