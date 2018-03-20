@@ -26,6 +26,11 @@ class Login extends Component {
   render() {
     return (
       <div>
+        <div id ="welcome">
+          WELCOME TO TRAX SYSTEM
+          <h2>Manage and track your assets all in one place </h2>
+      </div>
+
         <h1>LOGIN</h1>
         <hr />
         <HelloMsg />
