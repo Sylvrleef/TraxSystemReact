@@ -6,7 +6,6 @@ const db = require("../models");
 
 
 
-// Defining methods for the booksController
 const prController = {
   findAll: function(req, res) {
     db.purchase_request

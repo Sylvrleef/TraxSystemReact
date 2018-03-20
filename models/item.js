@@ -4,7 +4,10 @@ module.exports = function(sequelize, DataTypes) {
   var item = sequelize.define("items", {
     item_id: {
       type: DataTypes.INTEGER,
-      primaryKey: true
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+      options: { initialAutoIncrement: 100000 }
     },
 
     item_name: {
