@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import SecurityRole from "../components/SecurityRole";
 import {HelloMsg} from "../components/HelloMsg";
 //import InitiatorNavbar from "../components/InitiatorNavbar";
-import { StateDrop } from "../components/stateDrop";
+import { StateDrop } from "../components/StateDrop";
 import { InputFld } from "../components/InputFld";
 
 class AddVendorRequest extends Component {
