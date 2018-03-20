@@ -2,6 +2,7 @@
 body {
     font-family: "Quicksand", sans-serif;
     background-color: #f9f7ea;
+    color: #123758;
 }
 
 h1 {
@@ -35,18 +36,6 @@ input {
     background-color: #e1ebda;
     color: #123758;
     padding-right: 50px;
-}
-
-nav {
-    background-color: #e1ebda;
-    display: block;
-    color:#123758;
-    text-align: right;
-    padding: 60px 0 40px;
-    margin: 0;
-    padding: 5px;
-    overflow: hidden;
-    position: relative;
 }
 
 hr{
@@ -84,6 +73,42 @@ label {
     text-align-last: right;
 }
 
+table {
+    margin: 20px;
+}
+
+td {
+    border: 1px solid #123758;
+    padding: 8px;
+}
+
+tbody {
+    margin: 20px;
+}
+
+th {
+    background-color: #123758;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background: #f9f7ea;
+}
+
+tr:nth-child(odd) {
+    background: #e1ebda;
+}
+
+.btn {
+    margin: 20px;
+    height: auto;
+    width: 100px;
+    background-color: #123758;
+    border-color: #123758;
+}
+
 .container {
     margin: 0px;
     padding: 0px;
@@ -109,8 +134,36 @@ label {
     text-align: right;
 }
 
+.loginLinks#true {
+    color: #123758;
+}
+
 .links {
     color: #6a6c6c;
+}
+
+.navbar {
+    color: #b4bbbb;
+    display: block;
+    text-align: right;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.navbar-brand {
+    color: #123758;
+    margin: 0px 10px;
+    font-size: 15px;    
+}
+
+a:hover {
+    color: #7d8181;
+}
+
+
+.roleNavbar {
+    background-color: #e1ebda;
 }
 
 #welcome {
@@ -126,10 +179,6 @@ label {
 
 #securityRole {
     margin-left: 20px;
-}
-
-.loginLinks#true {
-    color: #123758;
 }
 
 @media {
