@@ -21,8 +21,13 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
     "express": "^4.15.4",
-    "react-router-dom": "^4.2.2"
+    "mysql2": "^1.5.3",
+    "npm": "^5.7.1",
+    "react-router-dom": "^4.2.2",
+    "sequelize": "^4.37.2"
   },
   "bugs": {
     "url": "https://github.com/Sylvrleef/Project3-Team1/issues"
