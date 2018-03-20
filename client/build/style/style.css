@@ -12,13 +12,13 @@ a {
 
 h1 {
     color: #123758;
-    font-size: 16px;
+    font-size: 30px;
     margin: 20px;
 }
 
 h2 {
     color: #123758;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 element.style {
@@ -41,10 +41,6 @@ input {
     padding-right: 50px;
 }
 
-#welcome {
-text-align: center;
-}
-
 nav {
     background-color: #e1ebda;
     display: block;
@@ -55,10 +51,6 @@ nav {
     padding: 5px;
     overflow: hidden;
     position: relative;
-}
-
-.active {
-    background-color: #e1ebda;
 }
 
 hr{
@@ -91,15 +83,28 @@ footer{
     height:60px;  
 }
 
+.container {
+    margin: 0px;
+    padding: 0px;
+}
+
+.active {
+    background-color: #e1ebda;
+}
+
+#welcome {
+    text-align: center;
+    font-size: 30px;
+    }
+
 #logo {
     height: 50px;
     width: 125px;
     margin: 10px;
 }
 
-.container {
-    margin: 0px;
-    padding: 0px;
+a#true {
+    color: #123758;
 }
 
 @media (min-width: 992px) {
@@ -107,8 +112,4 @@ footer{
         max-width: 100%;
     }
 
-}
-
-a#true {
-    color: #123758;
 }

@@ -4,7 +4,7 @@ class ResetPassword extends Component {
     render() {
         return (
             <div>
-                <a href='#'>Reset Password</a>
+                <a href='#' class="loginLinks">Reset Password</a>
             </div>
         );
     }

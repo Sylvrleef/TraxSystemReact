@@ -5,6 +5,7 @@ import { PasswordInput } from "../components/PasswordInput";
 import ResetPassword from "../components/ResetPassword";
 import RequestAccess from "../components/RequestAccess";
 import HelloMsg from "../components/HelloMsg";
+import SecurityRole from "../components/SecurityRole";
 
 class Login extends Component {
   constructor(props) {
@@ -27,8 +28,9 @@ class Login extends Component {
       <div>
         <h1>LOGIN</h1>
         <hr />
+        <HelloMsg />
+        <SecurityRole />
         <form>
-          <HelloMsg />
           <label htmlFor="Username">Username</label>
           <UsernameInput
             type="text"
