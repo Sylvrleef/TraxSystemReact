@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 class RequestAccess extends Component {
     render() {
         return (
-            <div>
-                <a href='#'>Request Access</a>
+            <div class="loginLinks">
+                <a href='#' class="links">Request Access</a>
             </div>
         );
     }

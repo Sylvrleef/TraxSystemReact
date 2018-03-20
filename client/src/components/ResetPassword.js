@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 class ResetPassword extends Component {
     render() {
         return (
-            <div>
-                <a href='#'>Reset Password</a>
+            <div class="loginLinks">
+                <a href='#' class="links">Reset Password</a>
             </div>
         );
     }

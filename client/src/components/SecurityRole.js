@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 class SecurityRole extends Component {
     render() {
         return (
-            <div>
-                {SecurityRole}
+            <div id="securityRole">
+               Security Role {SecurityRole}
             </div>
         );
     }
