@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "",
+    "password": "^yours001",
     "database": "traxx_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "gpf1payoobskuwnx",
-    "password": "q8sxnlcfkdyhrqt1",
-    "database": "database_production",
-    "host": "enqhzd10cxh7hv2e.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "p2hbjl1f52takoma",
+    "password": "p8vpmv37pbitjawz",
+    "database": "eht6dgylad28slei",
+    "host": "wvulqmhjj9tbtc1w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
