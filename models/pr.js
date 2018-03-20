@@ -1,7 +1,7 @@
 var Sequelize = require("sequelize");
 
 module.exports = function(sequelize, DataTypes) {
-  var purchase_request = sequelize.define("purchase_requests", {
+  var pr = sequelize.define("pr", {
     
     request_id: {
       type: DataTypes.INTEGER,
@@ -57,18 +57,23 @@ module.exports = function(sequelize, DataTypes) {
     },
 
     request_status: {
-      type: DataTypes.STRING,
-      allowNull: false
+      type: DataTypes.ENUM,
+      values: ["approved", "pending", "denied"]
+    }
+
+    }, {
+      freezeTableName: true,
+      underscored: true
     }
     
-  });
+  );
   
-  purchase_request.associate = function(models) {
-    purchase_request.belongsTo(models.employees, {
+  pr.associate = function(models) {
+    pr.belongsTo(models.employee, {
       foreignKey: "employee_id"
     });
   };
   
-  return purchase_request;
+  return pr;
 };
 

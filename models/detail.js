@@ -1,7 +1,7 @@
 var Sequelize = require("sequelize");
 
 module.exports = function(sequelize, DataTypes) {
-  var request_detail = sequelize.define("request_details", {
+  var detail = sequelize.define("detail", {
     
     request_id: {
       type: DataTypes.INTEGER,
@@ -35,20 +35,24 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     }
 
-  });
+  }, {
+      freezeTableName: true,
+      underscored: true
+    }
+  );
 
-  request_detail.associate = function (models) {
-    request_detail.belongsTo(models.purchase_requests, {
+  detail.associate = function (models) {
+    detail.belongsTo(models.pr, {
       foreignKey: "request_id"
     });
   };
 
-  request_detail.associate = function (models) {
-    request_detail.hasMany(models.items, {
+  detail.associate = function (models) {
+    detail.hasMany(models.item, {
       foreignKey: "item_id"
     });
   };
     
-  return request_detail;
+  return detail;
   
 };
