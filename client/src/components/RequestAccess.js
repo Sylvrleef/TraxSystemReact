@@ -4,7 +4,7 @@ class RequestAccess extends Component {
     render() {
         return (
             <div>
-                <a href='#'>Request Access</a>
+                <a href='#'class="loginLinks">Request Access</a>
             </div>
         );
     }
