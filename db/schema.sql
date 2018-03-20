@@ -3,60 +3,15 @@ CREATE DATABASE traxx_db;
 
 USE traxx_db;
 
-
-CREATE TABLE employees 
-(
-  employee_id INT AUTO_INCREMENT NOT NULL,
-  last_name VARCHAR(25) NOT NULL,
-  first_name VARCHAR(25) NOT NULL,
-  createdAt TIMESTAMP NOT NULL,
-  PRIMARY KEY (employee_id)
-);
-
-
-CREATE TABLE purchase_requests
-(
-  request_id INT AUTO_INCREMENT NOT NULL,
-  employee_id INT NOT NULL,
-  approver_id INT NOT NULL,
-  request_created DATE NOT NULL,
-  request_required DATE NOT NULL,
-  request_approved DATE,
-  request_total DECIMAL(10,2) NOT NULL,
-  tax_rate DECIMAL(5,2) NOT NULL,
-  estimated_shipping DECIMAL(10,2) NOT NULL,
-  justification VARCHAR(255),
-  comments VARCHAR(255),
-  request_status ENUM ("approved", "pending", "denied") NOT NULL,
-  createdAt TIMESTAMP NOT NULL,
-  
-  FOREIGN KEY (employee_id) REFERENCES employees (employee_id),
-  
-  PRIMARY KEY (request_id)
-);
-
-
-CREATE TABLE request_detail
-(
-  request_id INT NOT NULL,
-  item_id INT NOT NULL,
-  quantity INT NOT NULL,
-  unit_price DECIMAL(10,2) NOT NULL,
-  extended_price DECIMAL(10,2) NOT NULL,
-  request_line_number INT NOT NULL,
-  createdAt TIMESTAMP NOT NULL,
-
-  FOREIGN KEY (request_id) REFERENCES purchase_requests (request_id),
-  FOREIGN KEY (item_id) REFERENCES items (item_id),
-  
-  PRIMARY KEY (request_id, item_id)
-);
-
-
 CREATE TABLE items
 (
   item_id INT AUTO_INCREMENT NOT NULL,
   item_name VARCHAR(50) NOT NULL,
+  item_quant INT(10) NOT NULL,
+  item_unit VARCHAR(25) NOT NULL,
+  unit_price DECIMAL(13,2) NOT NULL,
+  request_id INT(10),
   createdAt TIMESTAMP NOT NULL,
-  PRIMARY KEY (item_id)
+  PRIMARY KEY (item_id),
 );
+
