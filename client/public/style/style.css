@@ -130,7 +130,7 @@ tr:nth-child(odd) {
 
 .form {
     margin: auto;
-    width: 30%;
+    width: 40%;
 }
 
 .form-control {
@@ -144,7 +144,7 @@ tr:nth-child(odd) {
 .loginLinks {
     font-size: 15px;
     margin: auto;
-    width: 30%;
+    width: 40%;
     text-align: right;
 }
 
@@ -183,6 +183,10 @@ a:hover {
     overflow: auto;
 }
 
+.row {
+    margin: 20px;
+}
+
 #wrapper {
     min-height: 100%;
     position: relative;
@@ -201,6 +205,10 @@ a:hover {
 
 #securityRole {
     margin-left: 20px;
+}
+
+#clipboard {
+    margin: 20px;
 }
 
 @media {
