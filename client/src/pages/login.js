@@ -29,29 +29,36 @@ class Login extends Component {
         <div id ="welcome">
           WELCOME TO TRAX SYSTEM
           <h2>Manage and track your assets all in one place </h2>
-      </div>
+        </div>
 
         <h1>LOGIN</h1>
         <hr />
+        <div class="row">
+        <div class="col-md-8">
         <HelloMsg />
         <SecurityRole />
-        <form>
-          <label htmlFor="Username">Username</label>
-          <UsernameInput
-            type="text"
-            name="userName"
-            onChange={this.handleInputChange}
-            value={this.state.userName}
-          />
-          <label htmlFor="password">Password</label>
-          <PasswordInput
-            name="password"
-            onChange={this.handleInputChange}
-            value={this.state.password}
-          />
-          <ResetPassword />
-          <RequestAccess />
-        </form>
+          <form id="loginForm">
+            <label htmlFor="Username">Username</label>
+            <UsernameInput
+              type="text"
+              name="userName"
+              onChange={this.handleInputChange}
+              value={this.state.userName}
+            />
+            <label htmlFor="password">Password</label>
+            <PasswordInput
+              name="password"
+              onChange={this.handleInputChange}
+              value={this.state.password}
+            />
+            <ResetPassword />
+            <RequestAccess />
+          </form>
+          </div>
+          <div class="col-md-4">
+          <img id="clipboard" src="/images/loginimg.jpg" alt="error loading" />
+          </div>
+        </div>
       </div>
     );
   }
