@@ -28,7 +28,8 @@
     "npm": "^5.7.1",
     "react": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "sequelize": "^4.37.2"
+    "sequelize": "^4.37.2",
+    "yarn": "^1.5.1"
   },
   "bugs": {
     "url": "https://github.com/Sylvrleef/Project3-Team1/issues"
