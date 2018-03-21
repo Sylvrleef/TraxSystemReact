@@ -2,13 +2,7 @@ var Sequelize = require("sequelize");
 
 module.exports = function(sequelize, DataTypes) {
   var item = sequelize.define("items", {
-    item_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-      options: { initialAutoIncrement: 100000 }
-    },
+  
 
     item_name: {
       type: DataTypes.STRING,
@@ -30,10 +24,10 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
 
-    request_id: {
-      type: DataTypes.INTEGER,
-      allowNull: true
-    }
+    // request_id: {
+    //   type: DataTypes.INTEGER,
+    //   allowNull: true
+    // }
   });
 
   return item;
