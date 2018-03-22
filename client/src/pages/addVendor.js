@@ -2,7 +2,7 @@ import React, { Component } from "react";
 //import ViewBtn from "../components/ViewBtn";
 //import RequestTable from "../components/RequestTable";
 import SecurityRole from "../components/SecurityRole";
-import {HelloMsg} from "../components/HelloMsg";
+import HelloMsg from "../components/HelloMsg";
 //import InitiatorNavbar from "../components/InitiatorNavbar";
 import { StateDrop } from "../components/StateDrop";
 import { InputFld } from "../components/InputFld";
@@ -38,6 +38,10 @@ class AddVendor extends Component {
     return (
       <div>
       <InitiatorNavbar />
+      <h1>ADD VENDOR</h1>
+        <hr />
+        <HelloMsg />
+        <SecurityRole />
       <form>
         <label htmlFor="vendorName">Vendor Name</label>
         <InputFld

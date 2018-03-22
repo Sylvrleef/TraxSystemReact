@@ -13,7 +13,7 @@ const Initiator = () => {
             <div>
                 <InitiatorNavbar />
                 <h1>Initiator Home Page</h1>
-                <hr></hr>
+                <hr />
                 <HelloMsg />
                 <SecurityRole />
                 <RequestTable />

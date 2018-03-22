@@ -8,6 +8,9 @@ import Table from "../components/Table";
 import { InputUnit } from "../components/InputUnit";
 import Modal from "../components/Modal";
 import InitiatorNavbar from "../components/InitiatorHomePage/InitiatorNavbar"
+import SecurityRole from '../components/SecurityRole';
+import HelloMsg from '../components/HelloMsg';
+
 
 class CreateRequest extends Component {
   constructor(props) {
@@ -66,6 +69,10 @@ class CreateRequest extends Component {
     return (
       <div>
         <InitiatorNavbar />
+        <h1>CREATE PURCHASE REQUEST</h1>
+        <hr />
+        <HelloMsg />
+        <SecurityRole />
       <form>
         <AddBtn
           className="btn show-modal"
