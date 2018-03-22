@@ -7,7 +7,7 @@ class InitiatorNavbar extends Component {
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="http://localhost:3000/request">Create Request</a>
                     |
-                    <a class="navbar-brand" href="http://localhost:3000/vendorrequest">Request Vendor Add</a>
+                    <a class="navbar-brand" href="http://localhost:3000/addvendor">Request Vendor Add</a>
                     |
                     <a class="navbar-brand" href="http://localhost:3000">View Requests</a>
                     |
