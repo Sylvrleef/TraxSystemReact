@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class ViewBtn extends Component {
     render() {
         return (
-                <button type="button" class="btn btn-success">View</button>
+                <button type="button" class="btn">View</button>
         );
     }
 }

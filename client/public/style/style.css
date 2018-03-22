@@ -80,7 +80,9 @@ footer{
 
 label {
     font-size: 20px;
-    text-align-last: right;
+    margin: auto;
+    width: 40%;
+    text-align: left;
 }
 
 table {
@@ -111,12 +113,27 @@ tr:nth-child(odd) {
     background: #e1ebda;
 }
 
+.loginLinks#true {
+    color: #123758;
+}
+
+.links {
+    color: #6a6c6c;
+}
+
 .btn {
     margin: 20px;
     height: auto;
     width: 100px;
     background-color: #123758;
     border-color: #123758;
+    color: #e1ebda;
+}
+
+.btn:hover {
+    background-color: #e1ebda;
+    border-color: #e1ebda;
+    color: #123758;
 }
 
 .container {
@@ -146,14 +163,6 @@ tr:nth-child(odd) {
     margin: auto;
     width: 40%;
     text-align: right;
-}
-
-.loginLinks#true {
-    color: #123758;
-}
-
-.links {
-    color: #6a6c6c;
 }
 
 .navbar {
@@ -209,6 +218,14 @@ a:hover {
 
 #clipboard {
     margin: 20px;
+}
+
+#loginBtnLink {
+    color: #e1ebda;
+}
+
+#loginBtnLink:hover {
+    color: #123758;
 }
 
 @media {

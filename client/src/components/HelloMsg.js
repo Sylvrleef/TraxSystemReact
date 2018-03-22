@@ -4,7 +4,7 @@ class HelloMsg extends Component {
     render() {
         return (
             <div>
-                <h2><em>Hello name!</em></h2>
+                <h2><em>Hello Jenni Usrey-Scott!</em></h2>
             </div>
         );
     }

@@ -52,7 +52,7 @@ class Login extends Component {
               onChange={this.handleInputChange}
               value={this.state.password}
             />
-            <AddBtn><Link to="/initiator">LOGIN</Link></AddBtn>
+            <AddBtn><Link id="loginBtnLink" to="/initiator">LOGIN</Link></AddBtn>
             {/* Make it go to initiator screen */}
             <ResetPassword />
             <RequestAccess />
