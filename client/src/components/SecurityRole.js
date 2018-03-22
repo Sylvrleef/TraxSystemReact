@@ -4,7 +4,7 @@ class SecurityRole extends Component {
     render() {
         return (
             <div id="securityRole">
-               Security Role {SecurityRole}
+               Initiator {SecurityRole}
             </div>
         );
     }
