@@ -1,13 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Link } from "react-router";
 import Admin from "./pages/admin";
 import Business from "./pages/business";
 import CreateRequest from "./pages/createRequest";
 import Fiscal from "./pages/fiscal";
 import Initiator from "./pages/initiator";
 import Login from "./pages/login";
-import AddVendorRequest from "./pages/addVendorRequest"
+import AddVendor from "./pages/addVendor"
 import "./App.css";
 
 const App = () => (
@@ -20,7 +19,8 @@ const App = () => (
         <Route exact path="/business" component={Business} />
         <Route exact path="/fiscal" component={Fiscal} />
         <Route exact path="/initiator" component={Initiator} />
-        <Route exact path="/vendorrequest" component={AddVendorRequest} />
+        {/* <Route exact path="/vendorrequest" component={AddVendorRequest} /> */}
+        <Route exact path="/addvendor" component={AddVendor} />
       </Switch>
     </div>
   </Router>

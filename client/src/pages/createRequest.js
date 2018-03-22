@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import API from "../utils/API"
-import ReactDOM from "react-dom";
 import { AddBtn } from "../components/AddBtn";
 //import { DeleteBtn } from "./components/DeleteBtn";
 import { InputFld } from "../components/InputFld";
