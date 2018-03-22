@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import { AddBtn } from "../components/AddBtn";
+import { Link } from "react-router-dom";
 import { UsernameInput } from "../components/UsernameInput";
 import { PasswordInput } from "../components/PasswordInput";
 import ResetPassword from "../components/ResetPassword";
@@ -51,6 +52,8 @@ class Login extends Component {
               onChange={this.handleInputChange}
               value={this.state.password}
             />
+            <AddBtn><Link to="/initiator">LOGIN</Link></AddBtn>
+            {/* Make it go to initiator screen */}
             <ResetPassword />
             <RequestAccess />
           </form>

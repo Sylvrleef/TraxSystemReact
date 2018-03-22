@@ -3,37 +3,31 @@ var Sequelize = require("sequelize");
 module.exports = function(sequelize, DataTypes) {
   var Detail = sequelize.define("Detail", {
     
-    request_id: {
+    itemID: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      autoIncrement: true,
       primaryKey: true
     },
 
-    item_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false
     },
 
-    quantity: {
+    quant: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
 
-    unit_price: {
+    unit: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+
+    price: {
       type: DataTypes.DECIMAL,
       allowNull: false
     },
-
-    extended_price: {
-      type: DataTypes.DECIMAL,
-      allowNull: false
-    },
-
-    request_line_number: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    }
 
   }, {
       freezeTableName: true,
@@ -48,7 +42,7 @@ module.exports = function(sequelize, DataTypes) {
   };
 
   Detail.associate = function (models) {
-    Detail.hasMany(models.Item, {
+    Detail.hasMany(models.item, {
       foreignKey: "item_id"
     });
   };
