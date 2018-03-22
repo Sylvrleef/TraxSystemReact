@@ -6,6 +6,8 @@ import {HelloMsg} from "../components/HelloMsg";
 //import InitiatorNavbar from "../components/InitiatorNavbar";
 import { StateDrop } from "../components/StateDrop";
 import { InputFld } from "../components/InputFld";
+import InitiatorNavbar from "../components/InitiatorHomePage/InitiatorNavbar"
+
 
 class AddVendor extends Component {
   constructor(props) {
@@ -34,6 +36,8 @@ class AddVendor extends Component {
 
   render() {
     return (
+      <div>
+      <InitiatorNavbar />
       <form>
         <label htmlFor="vendorName">Vendor Name</label>
         <InputFld
@@ -115,6 +119,7 @@ class AddVendor extends Component {
           value={this.state.website}
         />
       </form>
+      </div>
     );
   }
 }

@@ -30,9 +30,7 @@ element.style {
 }
 
 form {
-    align-items: center;
     font-size: 14px;
-    text-align: center;
 }
 
 span {
@@ -66,11 +64,10 @@ footer{
     display: block;
     color: white;
     text-align: center;
-    margin-top: 20px;
+    margin-top: -100px;
     padding: 5px;
     overflow: hidden;
     position: absolute;
-    bottom: 0;
     width: 100%;
     height: 60px;
     font-size: 10px;
@@ -80,7 +77,8 @@ footer{
 
 label {
     font-size: 20px;
-    text-align-last: right;
+    width: 40%;
+    text-align: left;
 }
 
 table {
@@ -98,8 +96,8 @@ tbody {
 
 th {
     background-color: #123758;
-    color: white;
-    border: 1px solid white;
+    color: #f9f7ea;
+    border: 1px solid #f9f7ea;
     padding: 8px;
 }
 
@@ -111,25 +109,45 @@ tr:nth-child(odd) {
     background: #e1ebda;
 }
 
+.loginLinks#true {
+    color: #123758;
+}
+
+.links {
+    color: #6a6c6c;
+}
+
 .btn {
     margin: 20px;
     height: auto;
-    width: 100px;
+    width: 150px;
     background-color: #123758;
+    border-color: #123758;
+    color: #e1ebda;
+}
+
+.btn:hover {
+    background-color: #e1ebda;
+    color: #123758;
     border-color: #123758;
 }
 
 .container {
     margin: 0px;
     padding: 0px;
+    margin-bottom: 100px;
 }
 
 .active {
     background-color: #e1ebda;
 }
 
+.modal-content {
+    background-color: #f9f7ea;
+    border: 0px;
+}
+
 .form {
-    margin: auto;
     width: 40%;
 }
 
@@ -146,14 +164,6 @@ tr:nth-child(odd) {
     margin: auto;
     width: 40%;
     text-align: right;
-}
-
-.loginLinks#true {
-    color: #123758;
-}
-
-.links {
-    color: #6a6c6c;
 }
 
 .navbar {
@@ -187,6 +197,16 @@ a:hover {
     margin: 20px;
 }
 
+.loginForm {
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+}
+
+#loginBtn {
+    margin-left: 400px;
+}
+
 #wrapper {
     min-height: 100%;
     position: relative;
@@ -209,6 +229,22 @@ a:hover {
 
 #clipboard {
     margin: 20px;
+}
+
+#loginBtnLink {
+    color: #e1ebda;
+}
+
+#loginBtnLink:hover {
+    color: #123758;
+}
+
+#loginSpace {
+    margin-top: 50px;
+}
+
+#securityRole {
+    margin-bottom: 50px;
 }
 
 @media {
