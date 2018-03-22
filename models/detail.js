@@ -25,14 +25,9 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
 
-    extended_price: {
-      type: DataTypes.DECIMAL,
-      allowNull: false
-    },
-
     request_line_number: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: true
     }
 
   }, {

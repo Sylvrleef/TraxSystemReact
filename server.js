@@ -16,6 +16,15 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
+app.post("/api/detail", function(req,res) {
+  console.log(req.body);
+  models.items.create(req.body)
+  .then(() => console.log("success"))
+  .catch(err => console.log(err))
+})
+app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 // Add routes
 app.use(routes);
 
