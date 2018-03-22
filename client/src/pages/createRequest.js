@@ -7,6 +7,7 @@ import { InputTxt } from "../components/InputTxt";
 import Table from "../components/Table";
 import { InputUnit } from "../components/InputUnit";
 import Modal from "../components/Modal";
+import InitiatorNavbar from "../components/InitiatorHomePage/InitiatorNavbar"
 
 class CreateRequest extends Component {
   constructor(props) {
@@ -63,6 +64,8 @@ class CreateRequest extends Component {
   render() {
     const { showModal } = this.state;
     return (
+      <div>
+        <InitiatorNavbar />
       <form>
         <AddBtn
           className="btn show-modal"
@@ -165,6 +168,7 @@ class CreateRequest extends Component {
           </div>
         </div>
       </form>
+      </div>      
     );
   }
 }

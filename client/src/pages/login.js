@@ -35,10 +35,8 @@ class Login extends Component {
         <h1>LOGIN</h1>
         <hr />
         <div class="row">
-        <div class="col-md-8">
-        <HelloMsg />
-        <SecurityRole />
-          <form id="loginForm">
+        <div id="loginSpace" class="col-md-8">
+          <form class="loginForm">
             <label htmlFor="Username">Username</label>
             <UsernameInput
               type="text"
@@ -52,8 +50,7 @@ class Login extends Component {
               onChange={this.handleInputChange}
               value={this.state.password}
             />
-            <AddBtn><Link id="loginBtnLink" to="/initiator">LOGIN</Link></AddBtn>
-            {/* Make it go to initiator screen */}
+            <AddBtn id="loginBtn" ><Link id="loginBtnLink" to="/initiator">LOGIN</Link></AddBtn>
             <ResetPassword />
             <RequestAccess />
           </form>

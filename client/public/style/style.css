@@ -77,7 +77,6 @@ footer{
 
 label {
     font-size: 20px;
-    margin: auto;
     width: 40%;
     text-align: left;
 }
@@ -121,7 +120,7 @@ tr:nth-child(odd) {
 .btn {
     margin: 20px;
     height: auto;
-    width: 100px;
+    width: 150px;
     background-color: #123758;
     border-color: #123758;
     color: #e1ebda;
@@ -141,6 +140,11 @@ tr:nth-child(odd) {
 
 .active {
     background-color: #e1ebda;
+}
+
+.modal-content {
+    background-color: #f9f7ea;
+    border: 0px;
 }
 
 .form {
@@ -193,6 +197,16 @@ a:hover {
     margin: 20px;
 }
 
+.loginForm {
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+}
+
+#loginBtn {
+    margin-left: 400px;
+}
+
 #wrapper {
     min-height: 100%;
     position: relative;
@@ -225,10 +239,8 @@ a:hover {
     color: #123758;
 }
 
-#loginForm {
-    align-items: center;
-    font-size: 14px;
-    text-align: center;
+#loginSpace {
+    margin-top: 50px;
 }
 
 #securityRole {
