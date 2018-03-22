@@ -9,7 +9,7 @@ router.route("/")
 // Matches with "/api/detail/:id"
 router
   .route("/:id")
-  .get(detailController.findById)
+  .get(detailController.findLast)
   .put(detailController.update)
   .delete(detailController.remove);
 

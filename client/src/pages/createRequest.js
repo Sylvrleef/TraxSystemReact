@@ -34,11 +34,13 @@ class CreateRequest extends Component {
   handleItemSave = event => {
     event.preventDefault();
     API.saveItem({
+      itemID: null,
       name: this.state.item.itemName,
       quant: this.state.item.itemQuant,
       unit: this.state.item.measureUnit,
       price: this.state.item.estPrice,
     })
+    API.getItem();
   };
 
   handleInputChange = event => {

@@ -16,6 +16,16 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+  findLast: function(req, res) {
+    db.Detail
+      .findAll({
+        limit: 1,
+        where: {key: key},
+        order:[["createdAt", "DESC"]]
+      })
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  }, 
   create: function(req, res) {
     db.Detail
       .create(req.body)

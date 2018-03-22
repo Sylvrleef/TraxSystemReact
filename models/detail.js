@@ -3,10 +3,10 @@ var Sequelize = require("sequelize");
 module.exports = function(sequelize, DataTypes) {
   var Detail = sequelize.define("Detail", {
     
-    id: {
+    itemID: {
       type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
+      primaryKey: true
     },
 
     name: {
