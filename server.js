@@ -22,8 +22,8 @@ app.use(routes);
 
 // Sync sequelize models
 const db = require("./models");
-db.sequelize.sync({force: false}).then(function() {
-  app.listen(PORT,function() {
-    console.log("App now listening at localhost:" + PORT);
-  });
+db.sequelize.sync().then(function() {
+	app.listen(PORT,function() {
+		console.log("App now listening at localhost:" + PORT);
+	});
 });
